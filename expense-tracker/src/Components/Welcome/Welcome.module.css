@@ -1,3 +1,4 @@
+
 .section {
     border-bottom: 2px solid black;
     display: flex;
@@ -5,30 +6,40 @@
 
 .h1 {
     font-style: italic;
-    font-size: large;
+    font-size: x-large;
 }
 
 .p {
-    padding-left: 950px;
+    padding-left: 870px;
+    padding-right: 10px;
     font-style: italic;
-    font-size: small;
+    font-size: large;
 }
 
 .button {
-    color: rgb(176, 234, 200);
+    color: rgb(165, 49, 97);
     border: none;
     font-style: italic;
     background-color: white;
-}
-.logout {
-    padding: 0px;
-    margin-left: 100px;
-    background-color: rgb(223, 134, 134);
-    width: 100px;
-    box-shadow: black;
-    border-style: double;
+    padding-left: 0;
 }
 
+.button:hover{
+    color: blueviolet;
+}
+.logout {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.logout:hover{
+    background-color: brown;
+}
 .verify {
     display: flex;
     float: right;
@@ -49,6 +60,8 @@
     background-color: aqua;
     width: 10cm;
     height: 1cm;
+    font-size: large;
+    padding-right: 30px;
 }
 
 .buttone:hover {

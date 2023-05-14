@@ -42,7 +42,7 @@ const Reset = (props) => {
         }
       })
       .then((data) => {
-        console.log("Reset link has been sent to you email");
+        alert("Reset link has been sent to you email");
       })
       .catch((err) => {
         alert(err.message);

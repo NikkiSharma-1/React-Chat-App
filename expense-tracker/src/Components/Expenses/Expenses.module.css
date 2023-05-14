@@ -8,6 +8,8 @@
 .label {
    width: 150px;
     margin: 40px;
+    font-size: large;
+    margin-left: 100px;
 }
 
 .list {
@@ -73,10 +75,21 @@
 }
 
 .home {
-    width: 190px;
+    width: 100px;
     padding: 0px;
-    background-color: #9ad3fa;
-    border-radius: 25px;
-    margin-left: 300px;
+    background-color:black;
+    border-radius: 8px;
+    margin-left: 850px;
+    margin-top: 20px;
+    color: #ffffff;
+    float: right;
+}
+
+.btn{
+    width: 150px;
+    margin: 40px;
+    font-size: large;
+    background-color:black;
+    color: white;
 }
 

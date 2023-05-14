@@ -48,7 +48,7 @@ const Welcome = (props) => {
           return res.json();
         } else {
           return res.json().then((data) => {
-            let errorMessage = "Data could not be fetched";
+            let errorMessage = "Error Occured";
             if (data && data.error && data.error.message) {
               errorMessage = data.error.message;
             }
@@ -91,7 +91,7 @@ const Welcome = (props) => {
         <h1> Day to day expenses</h1>
       </section>
       <button className={classes.buttone} onClick={expensesHandler}>
-        Track your expenses now
+        Track Your Expenses
       </button>
     </Fragment>
   );

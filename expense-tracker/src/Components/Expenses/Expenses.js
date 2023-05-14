@@ -46,11 +46,7 @@ const Expenses = (props) => {
     }, [allExpenses]);
   
     const onClick = () => {
-      
-      
         dispatch(themeActions.changeTheme());
-      
-    
     };
   
     const premiumHandler = () => {
@@ -82,7 +78,7 @@ const Expenses = (props) => {
       };
   
       fetch(
-        `https://expense-118bb-default-rtdb.firebaseio.com/${email}.json`,
+        `https://expense-tracker-2836e-default-rtdb.firebaseio.com/${email}.json`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -130,7 +126,6 @@ const Expenses = (props) => {
             className={`btn ${darkMode ? "btn-dark" : "btn-light"}`}
             onClick={onClick}
           >
-            
             {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
           </button> 
         )}
@@ -168,7 +163,7 @@ const Expenses = (props) => {
             <option value="grocery">Grocery</option>
             <option value="entertainment">Entertainment</option>
           </select>
-          <button id="submit">Add expense </button>
+          <button id="submit" className={classes.btn}>Add expense </button>
         </form>
         <hr></hr>
         <h1> Your Expenses for the month</h1>

@@ -31,7 +31,7 @@ const Profile = () => {
           return res.json();
         } else {
           return res.json().then((data) => {
-            let errorMessage = "Data could not be fetched";
+            let errorMessage = "Update Your Profile";
             /*if (data && data.error && data.error.message) {
                 errorMessage = data.error.message;
               }*/
@@ -96,6 +96,10 @@ const Profile = () => {
         alert(err.message);
       });
   };
+
+  const updateHandler=()=>{
+    alert("Profile is updated");
+  }
   return (
     <Fragment>
       <section>
@@ -116,7 +120,7 @@ const Profile = () => {
             </label>
             <input type="text" id="photo" ref={urlInputRef}></input>
 
-            <button className={classes.button}>Update</button>
+            <button className={classes.button} onClick={updateHandler}>Update</button>
           </div>
           {/* <div>
                <button className={classes.button}>Update Profile</button>

@@ -29,8 +29,16 @@
 }
 
 .button {
-    background-color: rgba(244, 191, 191, 0.774);
-    border: 2px;
+    background-color: rgba(140, 80, 80, 0.774);
+    border: 5px;
+    font-size: large;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
 }
 /* .reset{
     margin: 10rem auto;
@@ -44,5 +52,15 @@
     color: black;
 }  */
 .button1 {
-    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 8px;
+    margin:auto;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color: blueviolet;
 }
